@@ -1,6 +1,6 @@
-package Service;
+package org.eclipse.service;
 
-import model.Produit;
+import org.eclipse.model.Produit;
 
 public class ProduitService {
 	

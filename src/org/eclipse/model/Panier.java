@@ -1,4 +1,4 @@
-package model;
+package org.eclipse.model;
 
 import java.util.Arrays;
 

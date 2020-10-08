@@ -1,4 +1,4 @@
-package model;
+package org.eclipse.model;
 
 public class Commande {
 	private int idCommande;
