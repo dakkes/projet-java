@@ -1,29 +1,52 @@
 package model;
 
 public class Produit {
-	
-	
-	private int id;
+
+	private int idProduit;
+	private int quantiteStock;
+	private String categorie;
 	private String designation;
 	private int prixUnitaire;
 	private String image;
-	private String categorie;
-	
-	public Produit(int id, String designation, int prixUnitaire, String image, String categorie) {
+
+	public Produit() {
 		super();
-		this.id = id;
+		// TODO Auto-generated constructor stub
+	}
+
+	public Produit(int idProduit, int quantiteStock, String categorie, String designation, int prixUnitaire,
+			String image) {
+		super();
+		this.idProduit = idProduit;
+		this.quantiteStock = quantiteStock;
+		this.categorie = categorie;
 		this.designation = designation;
 		this.prixUnitaire = prixUnitaire;
 		this.image = image;
+	}
+
+	public int getIdProduit() {
+		return idProduit;
+	}
+
+	public void setIdProduit(int idProduit) {
+		this.idProduit = idProduit;
+	}
+
+	public int getQuantiteStock() {
+		return quantiteStock;
+	}
+
+	public void setQuantiteStock(int quantiteStock) {
+		this.quantiteStock = quantiteStock;
+	}
+
+	public String getCategorie() {
+		return categorie;
+	}
+
+	public void setCategorie(String categorie) {
 		this.categorie = categorie;
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public String getDesignation() {
@@ -50,20 +73,10 @@ public class Produit {
 		this.image = image;
 	}
 
-	public String getCategorie() {
-		return categorie;
-	}
-
-	public void setCategorie(String categorie) {
-		this.categorie = categorie;
-	}
-
 	@Override
 	public String toString() {
-		return "Produit [id=" + id + ", designation=" + designation + ", prixUnitaire=" + prixUnitaire + ", image="
-				+ image + ", categorie=" + categorie + "]";
+		return "Produit [idProduit=" + idProduit + ", quantiteStock=" + quantiteStock + ", categorie=" + categorie
+				+ ", designation=" + designation + ", prixUnitaire=" + prixUnitaire + ", image=" + image + "]";
 	}
-	 
-	
-	
+
 }
