@@ -2,7 +2,7 @@ package org.eclipse.service;
 
 import java.util.ArrayList;
 
-import org.eclipse.model.Produit;
+//import org.eclipse.model.Produit;
 import org.eclipse.model.Utilisateur;
 
 public class UtilisateurService {
@@ -20,6 +20,51 @@ public class UtilisateurService {
 		}
 		return null;
 	}
+
+	public ArrayList<Utilisateur> getUtilisateurs() {
+		return utilisateurs;
+	}
+
+	public void setUtilisateurs(ArrayList<Utilisateur> utilisateurs) {
+		this.utilisateurs = utilisateurs;
+	}
+	
+	
+	public void save(Utilisateur utilisateur) {
+
+		utilisateurs.add(utilisateur);
+
+	}
+
+	public void remove(Utilisateur utilisateur) {
+		utilisateurs.remove(utilisateur);
+	}
+
+	public void update(Utilisateur utilisateur) {
+		for (Utilisateur uti : utilisateurs) {
+			if (uti.getIdUtilisateur() == utilisateur.getIdUtilisateur()){
+				uti = utilisateur;
+			}
+		}
+	}
+
+	public ArrayList<Utilisateur> findAll(Utilisateur utilisateur) {
+		return utilisateurs;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	 
+	
 	
 }
  
