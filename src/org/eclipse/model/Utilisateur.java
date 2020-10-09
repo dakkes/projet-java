@@ -5,24 +5,23 @@ public class Utilisateur {
 	private int idUtilisateur;
 	private String nom;
 	private String prenom;
-	private String userName;
+	private String login;
 	private Adresse adresse;
-	private String motDePasse;
+	private String password;
 
 	public Utilisateur() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public Utilisateur(int idUtilisateur, String nom, String prenom, String userName, Adresse adresse,
-			String motDePasse) {
+	public Utilisateur(int idUtilisateur, String nom, String prenom, String login, Adresse adresse, String password) {
 		super();
 		this.idUtilisateur = idUtilisateur;
 		this.nom = nom;
 		this.prenom = prenom;
-		this.userName = userName;
+		this.login = login;
 		this.adresse = adresse;
-		this.motDePasse = motDePasse;
+		this.password = password;
 	}
 
 	public int getIdUtilisateur() {
@@ -49,12 +48,12 @@ public class Utilisateur {
 		this.prenom = prenom;
 	}
 
-	public String getUserName() {
-		return userName;
+	public String getLogin() {
+		return login;
 	}
 
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setLogin(String login) {
+		this.login = login;
 	}
 
 	public Adresse getAdresse() {
@@ -65,18 +64,20 @@ public class Utilisateur {
 		this.adresse = adresse;
 	}
 
-	public String getMotDePasse() {
-		return motDePasse;
+	public String getPassword() {
+		return password;
 	}
 
-	public void setMotDePasse(String motDePasse) {
-		this.motDePasse = motDePasse;
+	public void setPassword(String password) {
+		this.password = password;
 	}
+	
+	 
 
 	@Override
 	public String toString() {
-		return "Utilisateur [idUtilisateur=" + idUtilisateur + ", nom=" + nom + ", prenom=" + prenom + ", userName="
-				+ userName + ", adresse=" + adresse + ", motDePasse=" + motDePasse + "]";
+		return "Utilisateur [idUtilisateur=" + idUtilisateur + ", nom=" + nom + ", prenom=" + prenom + ", login="
+				+ login + ", adresse=" + adresse + ", password=" + password + "]";
 	}
 
 }
